@@ -1,0 +1,176 @@
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+
+  .container {
+  width: 100%;
+  max-width: 360px;
+  height: auto;
+  background: #fff;
+  border-radius: 30px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+
+.blob {
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  background: linear-gradient(135deg, #ff4f9a, #7b6cff);
+  border-radius: 50%;
+}
+
+.blob-top {
+    
+  top: -160px;
+  left: -80px;
+}
+
+.blob-bottom {
+  bottom: -120px;
+  right: -80px;
+}
+
+
+.form-box {
+  position: relative;
+  z-index: 2;
+  padding: 60px 30px;
+}
+
+
+h1 {
+  text-align: center;
+  color: #6c63ff;
+  margin-bottom: 10px;
+  font-size: 28px;
+  line-height: 1.2;
+}
+
+
+.login-text {
+  font-size: 13px;
+  margin-bottom: 30px;
+  color: #000000;
+}
+
+.login-text a {
+  color: #6c63ff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+label {
+  font-size: 12px;
+  color: #777;
+  margin-bottom: 6px;
+  display: block;
+}
+
+input {
+  width: 100%;
+  padding: 12px 18px;
+  border-radius: 25px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+input:focus {
+  border-color: #6c63ff;
+}
+
+
+button {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 30px;
+  background: linear-gradient(135deg, #6c63ff, #8f84ff);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(108, 99, 255, 0.4);
+}
+
+button:hover {
+  opacity: 0.9;
+}
+.new{
+    margin: 80px;
+}
+
+/* 📱 Mobile phones */
+@media (max-width: 480px) {
+  body {
+    padding: 15px;
+  }
+
+  .container {
+    border-radius: 20px;
+  }
+
+  .form-box {
+    padding: 40px 20px;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  input {
+    padding: 10px 14px;
+    font-size: 13px;
+  }
+
+  button {
+    padding: 12px;
+    font-size: 13px;
+  }
+
+  .blob {
+    width: 180px;
+    height: 180px;
+  }
+
+  .blob-top {
+    top: -120px;
+    left: -70px;
+  }
+
+  .blob-bottom {
+    bottom: -100px;
+    right: -70px;
+  }
+
+  .new {
+    margin: 40px;
+  }
+}
+
+/* 📱 Tablets */
+@media (max-width: 768px) {
+  .container {
+    max-width: 90%;
+  }
+}
+
+
