@@ -1,3 +1,4 @@
+
 * {
   margin: 0;
   padding: 0;
@@ -6,104 +7,110 @@
 }
 
 body {
-  background: #f6f6f6;
+  background: #dbd3d3;
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
 }
 
+
 .container {
-  background: #fff;
-  width: 360px;
+  width: 100%;
+  max-width: 360px;
   min-height: 640px;
-  border-radius: 25px;
-  padding: 40px 25px;
+  background: #fff;
+  border-radius: 30px;
   position: relative;
   overflow: hidden;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
 }
 
 
-.blob {
-  position: absolute;
-  width: 280px;
+.blob{
+  position:absolute;
+  width: 250px;
   height: 200px;
   background: linear-gradient(135deg, #ff4f9a, #7b6cff);
-  border-radius: 60% 40% 60% 40%;
+  border-radius: 50%;
+  z-index: 0;
 }
 
-.blob.top {
-  top: -80px;
-  left: -80px;
+.blob-top {
+  top: 150px;
+  left: -120px;
 }
 
-.blob.bottom {
-  bottom: -90px;
-  right: -90px;
+.blob-bottom {
+  bottom: -160px;
+  right: -140px;
+}
+
+.form-box {
+  position: absolute;
+  z-index: 2;
+  padding: 70px 28px 40px;
 }
 
 h1 {
   text-align: center;
   color: #6c63ff;
-  margin-top: 65px;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
   font-size: 28px;
-  line-height: 1.2;
 }
+
 
 .login-text {
   text-align: center;
   font-size: 13px;
   margin-bottom: 30px;
+  color: #000;
 }
 
 .login-text a {
   color: #6c63ff;
-  text-decoration: none;
   font-weight: 600;
+  text-decoration: underline;
 }
 
-form label {
+
+label {
   font-size: 12px;
-  color: #888;
-  margin-bottom: 5px;
+  color: #777;
+  margin-bottom: 6px;
   display: block;
 }
 
-form input {
+
+input {
   width: 100%;
-  padding: 12px 15px;
+  padding: 13px 18px;
   border-radius: 25px;
   border: 1px solid #ccc;
   outline: none;
-  margin-bottom: 20px;
+  font-size: 30px;
+  margin-bottom: 25px;
 }
 
-form input:focus {
+input:focus {
   border-color: #6c63ff;
 }
 
+
 button {
-  width: 100%;
-  padding: 12px;
-  border-radius: 25px;
+  width: 50;
+  padding: 14px;
   border: none;
-  background: linear-gradient(135deg, #7b6cff, #6c63ff);
+  border-radius: 30px;
+  background: linear-gradient(135deg, #6c63ff, #8f84ff);
   color: #fff;
   font-size: 14px;
-  letter-spacing: 1px;
+  font-weight: 600;
   cursor: pointer;
+  box-shadow: 0 8px 20px rgba(108, 99, 255, 0.4);
 }
 
 button:hover {
   opacity: 0.9;
 }
-form {
-  position: relative;
-  z-index: 2;
-}
 
-button {
-  position: relative;
-  z-index: 3;
-}

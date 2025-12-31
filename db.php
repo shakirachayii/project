@@ -1,0 +1,10 @@
+<?php
+
+$conn = mysqli_connect("localhost", "root", "", "login");
+
+if (!$conn) {
+    die("Database not connected: ");
+}
+
+
+?>

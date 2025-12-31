@@ -1,0 +1,160 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
+}
+
+body{
+  background:#fdfafc;
+  color:#333;
+}
+
+/* Navbar */
+.navbar{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:20px 60px;
+  background:#fff;
+  box-shadow:0 2px 5px rgba(0,0,0,0.1);
+  position:sticky;
+  top:0;
+  z-index:1000;
+}
+.navbar .logo{
+  font-weight:600;
+  font-size:1.5rem;
+  color:#e91e63;
+}
+.navbar nav a{
+  margin-left:20px;
+  text-decoration:none;
+  color:#333;
+  font-weight:500;
+  transition:color 0.3s;
+}
+.navbar nav a:hover{
+  color:#e91e63;
+}
+.btn-login{
+  background:#e91e63;
+  color:#fff;
+  padding:8px 15px;
+  border-radius:20px;
+}
+
+/* Hero Section */
+.hero{
+  display:flex;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("background.png");
+  height: 100vh;
+}
+
+.btn {
+  display: flex;
+  margin-top: -230px;
+  margin-left: 200px;
+  background-color: #e91e63;
+  padding: 15px;
+  height: 50px;
+  width: 150px;
+  border-radius: 15px;
+  color: white;
+  text-decoration: none;
+  justify-content: center;
+}
+
+/* Products Section */
+.products{
+  padding:60px;
+  text-align:center;
+}
+.products h2{
+  font-size:2rem;
+  margin-bottom:40px;
+  color:#e91e63;
+}
+.product-grid{
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:30px;
+}
+.product-card{
+  background:#fff;
+  border-radius:15px;
+  padding:20px;
+  width:250px;
+  box-shadow:0 5px 15px rgba(0,0,0,0.1);
+  transition:transform 0.3s;
+}
+.product-card:hover{
+  transform:translateY(-5px);
+}
+.product-card img{
+  width:100%;
+  border-radius:10px;
+  margin-bottom:15px;
+}
+.product-card h3{
+  margin-bottom:10px;
+  color:#333;
+}
+.product-card p{
+  margin-bottom:15px;
+  font-weight:500;
+}
+.btn-small{
+  background:#e91e63;
+  color:#fff;
+  padding:8px 15px;
+  border-radius:20px;
+  text-decoration:none;
+  font-size:0.9rem;
+}
+
+/* About & Contact */
+.about, .contact{
+  padding:60px;
+  text-align:center;
+}
+.about h2, .contact h2{
+  font-size:2rem;
+  margin-bottom:20px;
+  color:#e91e63;
+}
+.about p, .contact p{
+  font-size:1.1rem;
+  max-width:600px;
+  margin:0 auto;
+}
+
+/* Footer */
+footer{
+  background:#333;
+  color:#fff;
+  text-align:center;
+  padding:20px;
+}
+
+/* Responsive */
+@media(max-width:900px){
+  .hero{
+    flex-direction:column;
+    text-align:center;
+  }
+  .hero-image img{
+    margin-top:30px;
+  }
+  .navbar{
+    flex-direction:column;
+    gap:15px;
+  }
+  .product-grid{
+    flex-direction:column;
+    align-items:center;
+  }
+}

@@ -17,7 +17,7 @@
       <p>We’re glad to have you here.  
          Explore features and get started with your journey.</p>
 
-      <a href="login.html" class="btn">Login</a>
+      <a href="login.php" class="btn">Login</a>
     </div>
 
     <!-- Bottom Curve -->
