@@ -50,7 +50,7 @@ $name = $_SESSION['name'] ?? 'User';
 
   <!-- Featured Products -->
   <section class="products" id="products" style="margin-top: 250px;">
-  <h2>Featured Cases</h2>
+  <h2>OUR CATEGORIES </h2>
 
   <div class="product-grid">
     <?php
@@ -79,9 +79,11 @@ $name = $_SESSION['name'] ?? 'User';
   <!-- Contact Section -->
   <section class="contact" id="contact">
     <h2>Contact Us</h2>
-    <p>Email: support@phonecasehub.com</p>
-    <p>Phone: +1 234 567 890</p>
+    <p>Email: shakirachayii@gmail.com.com</p>
+    <p>Phone: +91 7560832979</p>
   </section>
+
+  
 
   <!-- Footer -->
   <footer>

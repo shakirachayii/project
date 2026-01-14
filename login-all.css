@@ -1,4 +1,5 @@
 
+
 * {
   margin: 0;
   padding: 0;
@@ -15,10 +16,10 @@ body {
 }
 
 
-.container {
+  .container {
   width: 100%;
   max-width: 360px;
-  min-height: 640px;
+  height: auto;
   background: #fff;
   border-radius: 30px;
   position: relative;
@@ -27,52 +28,52 @@ body {
 }
 
 
-.blob{
-  position:absolute;
+.blob {
+  position: absolute;
   width: 250px;
   height: 200px;
   background: linear-gradient(135deg, #ff4f9a, #7b6cff);
   border-radius: 50%;
-  z-index: 0;
 }
 
-.blob-top {
-  top: 150px;
-  left: -120px;
+.blob-top { 
+  top: -160px;
+  right: 200px;
 }
 
 .blob-bottom {
-  bottom: -160px;
-  right: -140px;
+  bottom: -120px;
+  right: -80px;
 }
 
+
 .form-box {
-  position: absolute;
-  z-index: 2;
-  padding: 70px 28px 40px;
+  position: relative;
+  z-index: 5;
+  padding: 60px 30px;
 }
+
 
 h1 {
   text-align: center;
   color: #6c63ff;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
   font-size: 28px;
+  line-height: 1.2;
 }
 
 
 .login-text {
-  text-align: center;
   font-size: 13px;
   margin-bottom: 30px;
-  color: #000;
+  color: #000000;
 }
 
 .login-text a {
   color: #6c63ff;
+  text-decoration: none;
   font-weight: 600;
-  text-decoration: underline;
 }
-
 
 label {
   font-size: 12px;
@@ -81,15 +82,14 @@ label {
   display: block;
 }
 
-
 input {
   width: 100%;
-  padding: 13px 18px;
+  padding: 12px 18px;
   border-radius: 25px;
   border: 1px solid #ccc;
   outline: none;
-  font-size: 30px;
-  margin-bottom: 25px;
+  font-size: 14px;
+  margin-bottom: 20px;
 }
 
 input:focus {
@@ -98,7 +98,7 @@ input:focus {
 
 
 button {
-  width: 50;
+  width: 100%;
   padding: 14px;
   border: none;
   border-radius: 30px;
@@ -113,4 +113,63 @@ button {
 button:hover {
   opacity: 0.9;
 }
+.new{
+    margin: 80px;
+}
+
+
+@media (max-width: 480px) {
+  body {
+    padding: 15px;
+  }
+
+  .container {
+    border-radius: 20px;
+  }
+
+  .form-box {
+    padding: 40px 20px;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  input {
+    padding: 10px 14px;
+    font-size: 13px;
+  }
+
+  button {
+    padding: 12px;
+    font-size: 13px;
+  }
+
+  .blob {
+    width: 180px;
+    height: 180px;
+  }
+
+  .blob-top {
+    top: -120px;
+    left: -70px;
+  }
+
+  .blob-bottom {
+    bottom: -100px;
+    right: -70px;
+  }
+
+  .new {
+    margin: 40px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 90%;
+  }
+}
+
 
